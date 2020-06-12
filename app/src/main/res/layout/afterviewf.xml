@@ -1,0 +1,84 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_item_desc"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentBottom="true"
+
+
+    android:layout_centerHorizontal="true"
+    android:layout_weight="2"
+    android:background="#F09819"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <TextView
+            android:id="@+id/billamount2"
+            android:layout_width="406dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="12dp"
+            android:layout_weight="9"
+            android:gravity="center_vertical"
+            android:text="Bill Amount: "
+            android:textColor="@color/colorAccent2"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/itemcount3"
+        android:layout_width="406dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="@dimen/margin_small"
+        android:hint="Item Count: "
+        android:textColor="@color/colorAccent2"
+        android:textSize="@dimen/text_size_large" />
+
+    <TextView
+        android:id="@+id/duration2"
+        android:layout_width="406dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:hint="Duration: "
+        android:textColor="@color/colorAccent2"
+        android:textSize="@dimen/text_size_large" />
+
+    <TextView
+        android:id="@+id/distanceroad2"
+        android:layout_width="406dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:hint="Disatance: "
+        android:textColor="@color/colorAccent2"
+        android:textSize="@dimen/text_size_large" />
+
+    <TextView
+        android:id="@+id/distanceaddress2"
+        android:layout_width="406dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="12dp"
+        android:hint="Delivery Address: "
+        android:textColor="@color/colorAccent2"
+        android:textSize="@dimen/text_size_large" />
+
+    <ImageView
+        android:id="@+id/findmap"
+
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|right"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="5dp"
+        android:background="@color/colorPrimary2"
+        android:elevation="40dp"
+        android:padding="17dp"
+        android:src="@drawable/ordernow" />
+
+</LinearLayout>

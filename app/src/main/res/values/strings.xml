@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Bakery Express</string>
+    <string name="google_map_api_key">AIzaSyA5dC9Iroe5jU2Lo1eldFBLDvxO70jfy_c</string>
+    <string name="homelayout">New Orders</string>
+    <string name="historyLayout">Order History</string>
+    <string name="accountLayout">My Account</string>
+    <string name="facebook_app_id">200177337959127</string>
+    <string name="fb_login_protocol_scheme">fb200177337959127</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

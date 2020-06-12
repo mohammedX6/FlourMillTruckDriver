@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/stats"
+    android:layout_width="match_parent"
+
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".UI.OrderHistoryActivity">
+
+
+    <LinearLayout
+        android:id="@+id/activity_cart_list"
+        android:layout_width="match_parent"
+        android:layout_height="244dp"
+        android:layout_marginTop="35dp"
+        android:orientation="vertical"
+        android:weightSum="10">
+
+
+        <TextView
+            android:id="@+id/Ods"
+            android:layout_width="406dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="-5dp"
+            android:hint="Order Products"
+            android:textAlignment="center"
+
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview91"
+            android:layout_width="match_parent"
+            android:layout_height="244dp"
+            android:layout_marginTop="20dp"
+            android:scrollbars="vertical" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/layout_item_desc"
+        android:layout_width="412dp"
+        android:layout_height="293dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+
+
+        android:layout_weight="2"
+        android:background="@color/gradient_background"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:id="@+id/billamount2"
+                android:layout_width="406dp"
+                android:layout_height="60dp"
+                android:layout_marginLeft="12dp"
+                android:layout_weight="9"
+                android:gravity="center_vertical"
+                android:text="Bill Amount: "
+                android:textColor="@color/colorAccent2"
+                android:textSize="@dimen/text_size_large"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/itemcount2"
+            android:layout_width="406dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:layout_marginTop="@dimen/margin_small"
+            android:hint="Item Count: "
+            android:textColor="@color/colorAccent2"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/orderdate2"
+            android:layout_width="406dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:hint="Order Date:"
+            android:textColor="@color/colorAccent2"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/orderstatues2"
+            android:layout_width="406dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:hint="Order Statues: 1"
+            android:textColor="@color/colorAccent2"
+            android:textSize="@dimen/text_size_large" />
+
+        <TextView
+            android:id="@+id/deliveryaddress2"
+            android:layout_width="406dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="12dp"
+            android:hint="Delivery Address: 1"
+            android:textColor="@color/colorAccent2"
+            android:textSize="@dimen/text_size_large" />
+
+        <ImageView
+            android:id="@+id/imageclcik"
+
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="bottom|right"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/colorPrimary2"
+            android:elevation="40dp"
+            android:padding="17dp"
+            android:src="@drawable/ordernow" />
+
+    </LinearLayout>
+
+</RelativeLayout>

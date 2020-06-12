@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.truckdriverco.truckdriver"
+        minSdkVersion 23
+        targetSdkVersion 28
+        versionCode 7
+        versionName "1.5"
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+android {
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.core:core-ktx:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+    implementation 'com.google.firebase:firebase-analytics:17.4.0'
+    implementation 'com.github.florent37:materialtextfield:1.0.7'
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation 'me.zhanghai.android.materialratingbar:library:1.4.0'
+    implementation 'com.squareup.retrofit2:retrofit:2.8.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.8.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.6.0'
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.google.android.material:material:1.1.0'
+    implementation 'com.auth0.android:jwtdecode:1.4.0'
+    debugImplementation 'com.amitshekhar.android:debug-db:1.0.6'
+    implementation 'androidx.mediarouter:mediarouter:1.1.0'
+    implementation 'com.github.florent37:materialtextfield:1.0.7'
+    implementation 'com.jakewharton:butterknife:10.2.1'
+    implementation 'com.github.GrenderG:Toasty:1.4.2'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
+    implementation 'com.rengwuxian.materialedittext:library:2.1.4'
+    implementation 'com.airbnb.android:lottie:3.4.0'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'me.zhanghai.android.materialratingbar:library:1.4.0'
+    implementation 'com.marozzi.roundbutton:round-button:1.0.7'
+    implementation 'com.google.firebase:firebase-analytics:17.4.0'
+    implementation 'com.chootdev:recycleclick:1.0.0'
+    implementation 'org.conscrypt:conscrypt-android:2.4.0'
+    implementation 'com.google.firebase:firebase-auth:19.3.1'
+    implementation 'com.google.firebase:firebase-firestore:21.4.3'
+    implementation 'com.google.android.gms:play-services-maps:17.0.0'
+    implementation 'com.google.android.gms:play-services-location:17.0.0'
+    implementation 'com.facebook.android:facebook-android-sdk:[5,6)'
+    implementation 'com.google.maps.android:android-maps-utils:1.1.0'
+    implementation 'com.google.maps:google-maps-services:0.13.0'
+    implementation 'org.slf4j:slf4j-simple:1.7.30'
+    implementation 'com.github.shivpujan12:LocationPicker:v1.2'
+}
